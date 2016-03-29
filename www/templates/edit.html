@@ -1,0 +1,24 @@
+<ion-view view-title="Edit">
+  <ion-content>
+    <div class="card">
+
+      <ion-input class="item item-input">
+      <input type="text" placeholder="Name" ng-model="person.name">
+      </ion-input>
+
+      <ion-input class="item item-input">
+      <textarea rows="3" placeholder="Status" ng-model="person.status"></textarea>
+      </ion-input>
+
+    </div>
+
+    <div class="padding">
+      <div class="button-bar">
+        <button class="button button-outline button-assertive" ng-click="delete()" ng-if="person.$id">Delete
+</button>
+        <button class="button button-positive" ng-click="save()">Save</button>
+
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
